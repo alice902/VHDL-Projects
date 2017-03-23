@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/199987/DIGTO7SEG/module.xst" -ofn "D:/199987/DIGTO7SEG/module.syr" 
+xst -intstyle ise -ifn "D:/199987/DIGTO7SEG/module.xst" -ofn "D:/199987/DIGTO7SEG/module.syr" 
+xst -intstyle ise -ifn "D:/199987/DIGTO7SEG/module.xst" -ofn "D:/199987/DIGTO7SEG/module.syr" 
+xst -intstyle ise -ifn "D:/199987/DIGTO7SEG/module.xst" -ofn "D:/199987/DIGTO7SEG/module.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc95288xl-TQ144-6 module.ngc module.ngd  
