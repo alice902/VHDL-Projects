@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "D:/199987/PROJECT1LED/led_prg.xst" -ofn "D:/199987/PROJECT1LED/led_prg.syr" 
+xst -intstyle ise -ifn "D:/199987/PROJECT1LED/led_prg.xst" -ofn "D:/199987/PROJECT1LED/led_prg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_Master.ucf -p xc6slx16-csg324-3 led_prg.ngc led_prg.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_prg_map.ncd led_prg.ngd led_prg.pcf 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_prg_map.ncd led_prg.ngd led_prg.pcf 
+par -w -intstyle ise -ol high -mt off led_prg_map.ncd led_prg.ncd led_prg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml led_prg.twx led_prg.ncd -o led_prg.twr led_prg.pcf -ucf Nexys3_Master.ucf 
+bitgen -intstyle ise -f led_prg.ut led_prg.ncd 
